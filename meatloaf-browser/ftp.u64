@@ -1,0 +1,11 @@
+open 10.1.10.4 21
+guest
+anonymous
+dir
+cd Usb2
+binary
+put prg_files/smlb.prg
+put prg_files/mlb.prg
+put prg_files/mlb.d64
+
+quit
