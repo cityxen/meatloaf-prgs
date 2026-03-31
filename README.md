@@ -3,6 +3,10 @@
 
 A Collection of Commodore 64 Programs to utilize the Meatloaf / FujiNET device.
 
+- Wifi
+wifi/
+Configure your wifi with Meatloaf
+
 - Detect Meatloaf
 detect-meatloaf/
 A BASIC program to detect if a meatloaf is present on the IEC bus

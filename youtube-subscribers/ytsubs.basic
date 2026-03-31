@@ -1,0 +1,20 @@
+0 print"{clr}{wht}searching for meatloaf..."
+2 c=65327:hi=int(c/256):lo=c-256*hi
+3 open1,8,15:print#1,"m-r";chr$(lo);chr$(hi):get#1,z$:t=asc(z$):close1
+6 ift=48thenprint"meatloaf found":goto10
+7 print:  print"meatloaf not found.":print
+8 print "you need a meatloaf for this!":print"https://store.cityxen.biz"
+9 end
+10 rem continue program
+11 ifa=0thena=1:load"http://tech.cityxen.net/subs/subs64.php",8,1
+45 fori=49152to49155
+46 print i;":";peek(i)
+47 next
+50 b=peek(49152)
+51 b=b+peek(49153)*256
+55 b=b+peek(49154)*65536
+56 b=b+peek(49155)*16777216
+57 print"{wht} subscribers: ";
+60 printb
+90 fori=0to20000:next
+100 a=0:goto 10

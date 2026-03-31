@@ -1,0 +1,8 @@
+open 192.168.1.15 21
+guest
+anonymous
+dir
+cd Usb2
+binary
+put wifi.prg
+quit

@@ -7,4 +7,4 @@
     6 ift=48thenprint"meatloaf found":goto10
     7 print:print"meatloaf not found.":print:end
    10 rem continue program
-
+  100 open 1,8,15,"i0":input#1,en,em$,et,es:close 1:print en,em$,et,es
