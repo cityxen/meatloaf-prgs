@@ -4,5 +4,5 @@ anonymous
 dir
 cd Usb2
 binary
-put c64-wifi.prg
+put wifi-c64.prg
 quit
