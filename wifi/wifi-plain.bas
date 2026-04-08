@@ -36,7 +36,6 @@
   705 rem print"Scanning["+z$+"]"
   710 open1,30,15,z$:input#1,r$,s$:close1: return
   900 open 1,8,15,"i0":input#1,en,em$,et,es:close 1
-  905 
   910 rem print en;
   915 print em$; :rem "{left},"+
   920 rem print et;:print "{left},";:print es;
