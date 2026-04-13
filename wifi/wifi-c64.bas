@@ -34,10 +34,10 @@
   700 z$="scanresult,"+str$(x)
   705 rem print"Scanning["+z$+"]"
   710 open1,30,15,z$:input#1,r$,s$:close1: return
-  900 open 1,8,15,"i0":input#1,en,em$,et,es:close 1
-  905 
-  910 rem print en;
+  900 gosub 960
   915 print em$; :rem "{left},"+
   920 rem print et;:print "{left},";:print es;
   940 print "{rvof}";
   950 return
+  960 open 1,8,15,"i0":input#1,en,em$,et,es:close1:return
+  970 gosub 960:print left$(em$,8):return
