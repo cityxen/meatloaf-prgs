@@ -16,6 +16,7 @@
   210 print"{clr}meatloaf wifi loader{down}"
   215 print"system: "sy$(a):ifa=0thenend
   230 ld=186:ifa=6thenld=174
+  232 poke 250,ld
   235 ifa<3ora=6ora=7ormc=0then270
   240 a=8:print"mega-cart detected"
   250 ifsj=0thenprint"sjload not installed":goto270

@@ -2,9 +2,7 @@
     0 goto 10
     1 print"{clr}{wht}searching for meatloaf..."
     2 c=65327:hi=int(c/256):lo=c-256*hi
-    3 open1,8,15:print#1,"m-r";chr$(lo);chr$(hi):get#1,z$:t=asc(z$):close1
-    6 ift=48thenprint"meatloaf found":goto10
-    7 print:print"meatloaf not found.":print:end
+    3 dr=peek(186)
    10 print chr$(142):sys49152
    12 get a$
    13 ifa$="w"thengoto20
@@ -34,10 +32,5 @@
   700 z$="scanresult,"+str$(x)
   705 rem print"Scanning["+z$+"]"
   710 open1,30,15,z$:input#1,r$,s$:close1: return
-  900 gosub 960
-  915 print em$; :rem "{left},"+
-  920 rem print et;:print "{left},";:print es;
-  940 print "{rvof}";
-  950 return
-  960 open 1,8,15,"i0":input#1,en,em$,et,es:close1:return
+  900 open 1,dr,15,"i0":input#1,en,em$,et,es:close1:return
   970 gosub 960:print left$(em$,8):return
