@@ -1,8 +1,5 @@
 ;ml2.prg ==0801==
-    0 goto 10
-    1 print"{clr}{wht}searching for meatloaf..."
-    2 c=65327:hi=int(c/256):lo=c-256*hi
-    3 dr=peek(186)
+    5 dr=peek(186)
    10 print chr$(142):sys49152
    12 get a$
    13 ifa$="w"thengoto20
@@ -15,7 +12,8 @@
    23 gosub500:print "{grn}Current WIFI SSID {wht}: {yel}{rvon} "+a$
    24 gosub510:print "{grn}Current WIFI IP   {wht}: {yel}{rvon}"+a$
    25 print:print "{grn}Meatloaf FW {wht}: {yel}{rvon}";
-   30 gosub 900:print:print
+   30 open 1,dr,15,"i:":input#1,en,em$,et,es:close1
+   35 print right$(em$,11):print:print
    40 print"{grn}Scanning WIFI APs{wht}...":print
    50 gosub 600:forx=0tos:gosub 700:print"{yel}{rvon}"+s$+"{rvof}":next
    70 print:input "{grn}Enter NEW WIFI SSID {wht}";s$
@@ -32,5 +30,5 @@
   700 z$="scanresult,"+str$(x)
   705 rem print"Scanning["+z$+"]"
   710 open1,30,15,z$:input#1,r$,s$:close1: return
-  900 open 1,dr,15,"i0":input#1,en,em$,et,es:close1:return
-  970 gosub 960:print left$(em$,8):return
+  
+  
