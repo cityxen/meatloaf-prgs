@@ -6,4 +6,7 @@ petcat -w2 -o prg_files/wifi-vic20 src/wifi-plain.bas
 petcat -w3 -o prg_files/wifi-c16 src/wifi-plain.bas
 petcat -w70 -o prg_files/wifi-c128 src/wifi-plain.bas
 petcat -w2 -o prg_files/wifi src/wifi-loader.bas
+petcat -w65 -o prg_files/wifi-mega65 src/wifi-mega65.bas
+petcat -w65 -o prg_files/wifi-mega65-loader src/wifi-loader-mega65.bas
+petcat -w2 -o prg_files/wifi-x16 src/wifi-x16.bas
 7z a prg_files.zip prg_files/*
